@@ -1,0 +1,26 @@
+puts "Enter desired operation (+, -, *, /, seven)"
+op = gets.chomp
+puts "Enter first number"
+n1 = gets.to_i
+puts "Enter second number"
+n2 = gets.to_i
+
+case op
+when '+'
+    add = n1 + n2
+    puts "#{n1+n2}"
+
+when '-'
+    subtract = n1-n2
+    puts "#{subtract}"
+when '*'
+    multiply= n1*n2
+    puts "#{multiply}"
+when '/'
+    divide = n1/n2
+    puts "#{divide}"
+when 'seven'
+    puts "7"
+else
+    puts "Selected operator is invalid"
+end
