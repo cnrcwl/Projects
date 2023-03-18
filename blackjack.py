@@ -29,7 +29,7 @@ while play_again == 'y':
         elif user_score > dealer_score :
             return "You win"
         else:
-            return "Dealer win"
+            return "Dealer wins"
 
 
     player_card = []
@@ -47,8 +47,8 @@ while play_again == 'y':
     while not game_over:
         user_score = score(player_card)
         computer_score = score(dealer_card)
-        print(f"Your cards are {player_card} and score is {user_score}")
-        print(f"Dealer's first card: {dealer_card[0]} ")
+        print(f"Your cards are {player_card} and your score is {user_score}")
+        print(f"Dealer's shown card: {dealer_card[0]} ")
 
         if user_score == 0 or dealer_score == 0 or user_score > 21:
             game_over = True
@@ -68,8 +68,8 @@ while play_again == 'y':
         dealer_score = score(dealer_card)
 
 
-    print(f"computer cards: {dealer_card}",)
-    print(f"compute score: {dealer_score}")
+    print(f"Dealer cards: {dealer_card}",)
+    print(f"Dealer score: {dealer_score}")
     print(declare_winner(dealer_score, user_score))
     print ("Game Over.")
     play_again = (input ("Type Y to play again, otherwise press enter: "))
